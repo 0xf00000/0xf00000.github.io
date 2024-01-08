@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscSearch</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#"><span class="icon-logo">DiscSearch</span></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="http://discsearch.cc/">Website</a></li>
+                <li><a href="http://discsearch.cc/index.php#projects">Projects</a></li>
+                <li><a href="https://discord.gg/muGREapMPS">Support</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.gg/muGREapMPS" class="cta"><span class="contact-link">Contact</span></a>
+    </header>
+
+    <div class="center">
+        <div class="title">
+            <h1>Disc<span>Search</span></h1>
+        </div>
+    </div>
+    <div class="search-container">
+        <label for="searchType"></label>
+        <select id="searchType">
+            <option value="email">Email</option>
+            <option value="username">Username</option>
+            <option value="lastip">Last IP</option>
+            <option value="password">Password</option>
+            <option value="name">Name</option>
+            <option value="hash">Hash</option>
+        </select>
+        <input type="text" id="searchInput">
+        <button id="searchButton">Search</button>
+    </div>
+    <div id="results" class="results-container"></div>
+
+    <script src="./assets/js/api.js"></script>
+</body>
+
+</html>
